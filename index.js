@@ -5,13 +5,10 @@ function comsummation (array) {
     return array
   } else {
     const head = array.shift()
-
-    comsummations = [].concat(head)
-    for (let i = 0; i < array.length; i += 1) {
-      comsummations.push(head + array[i])
-    }
-
-    comsummations = comsummations.concat(comsummation(array))
+    
+    comsummations = array.map(el => el + head).concat(head)
+    
+    comsummations = comsummation(array).concat(comsummations)
   }
 
   return comsummations.sort()
