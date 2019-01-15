@@ -1,6 +1,6 @@
 {
   "name": "comsummation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lists total combinations, plus sums of a given number of items",
   "main": "index.js",
   "scripts": {
