@@ -12,7 +12,7 @@
   ],
   "author": "Adam Cook",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "jasmine": "^3.1.0"
   }
 }
