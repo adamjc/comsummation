@@ -1,17 +1,12 @@
 function comsummation (array) {
-  let comsummations
-
   if (array.length === 1) {
     return array
   } else {
     const head = array.shift()
+    const comsummations = array.map(el => el + head).concat(head)
     
-    comsummations = array.map(el => el + head).concat(head)
-    
-    comsummations = comsummation(array).concat(comsummations)
+    return comsummation(array).concat(comsummations).sort()
   }
-
-  return comsummations.sort()
 }
 
 module.exports = comsummation
